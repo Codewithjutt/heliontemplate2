@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Concept Items</title>
+    <style>
+        .header-wrapper{
+            width: 100%;
+            height: 630px;
+            /* background-color: brown; */
+            /* background-image: url(./images/slide_7-1-copyright1\ \(1\).jpg); */
+            background-position: center;
+            background-size: cover;
+            /* border: 2px solid red; */
+            position: relative;
+        }
+        .navbar{
+            width: 100%;
+            min-height: 15vh;
+            /* border: 2px solid white; */
+            display: flex;
+            flex-direction: row;
+            color: white;
+            flex-wrap: wrap;
+            position: fixed;
+            justify-content: space-around;
+        }
+        .nav-item{
+            width: 55%;
+            height: 14vh;
+            /* border: 3px solid red; */
+        }
+        .i1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            width: 150px;
+            height: 12vh;
+            background-image: url(./images/logo-inverse.png);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .i2{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .i2 i{
+            font-size: 30px;
+        }
+        .main-header{
+            width: 100%;
+            min-height:25vh;
+            /* border: 2px solid white; */
+            /* background-color: red; */
+            margin-top: 480px;
+            display: flex;
+            flex-wrap: wrap;
+            position: fixed;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .main-content{
+            width: 300px;
+            height: 20vh;
+            margin-top: 20px;
+            /* border: 2px solid white; */
+            /* background-color: red; */
+        }
+        .con-1{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+        }
+        .con-2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #animation1  li{
+            margin: 20px 50px;
+        }
+        #anim{
+            width: 100px;
+            height: 50px;
+            background-image: url(./images/mouse-clicker.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            /* border: 2px solid white; */
+            animation: mouse1 4s infinite linear;
+        }
+        @keyframes mouse1 {
+            0%{
+                margin-top: 10px;
+            }
+            50%{
+                margin-top: -20px;
+            }
+            100%{
+                margin-top: 0px;
+            }
+            
+        }
+        #p2{
+            color: white;
+        }
+        .con-3{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            color: white;
+            align-items: center;
+        }
+        #ul9 li{
+            margin: 20px;
+            font-size: 30px;
+        }
+        .pic1{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            /* opacity: 0; */
+            visibility: hidden;
+            background-image: url(./images/slide_7-1-copyright1\ \(1\).jpg);
+            background-position: center;
+            background-size: cover;
+            animation: fade1 20s infinite linear;
+        }
+        @keyframes fade1 {
+            0%{visibility: visible;}
+            33%{visibility: hidden;}
+            66%{visibility: hidden;}
+            100%{visibility: visible;}
+        }
+        .pic1-content{
+            width: 85%;
+            min-height: 300px;
+            margin: 200px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            /* border: 2px solid white; */
+        }
+        .con1{
+            width: 800px;
+            height: 290px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content:flex-start;
+            text-align: center;
+            /* border: 2px solid white; */
+            animation: up2 1s linear;
+        }
+        .con1 h1{
+            color: white;
+            font-size: 60px;
+            margin: -20px 80px;
+            font-weight: lighter;
+        }
+        @keyframes up2 {
+            from{
+                margin-left:250px;
+            }
+            to{
+                margin-left: 0px;
+            }
+            
+        }
+        .con1 p{
+            color: white;
+            font-weight: bold;
+        }
+        .con2{
+            width: 200px;
+            height: 290px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* border: 2px solid white;             */
+        }
+        #hs li{
+            display: inline-flex;
+        }
+        #hello{
+            color: white;
+        }
+        #h1{
+            width:30px;
+            height: 0px;
+            margin-left: 20px;
+            border:1px solid red ;
+        }
+        #h2{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h3{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h4{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h5{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        .pic2{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url(./images/slide_7-2-copyright1\ \(1\).jpg);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+            /* opacity: 0; */
+            visibility: hidden;
+            /* background-color: grey; */
+            animation: fade2 10s infinite linear;
+        }
+        @keyframes fade2 {
+            0%{visibility: hidden;}
+            33%{visibility: visible;}
+            66%{visibility: hidden;}
+            100%{visibility: hidden;}
+        }
+        .pic2-content{
+            width: 70%;
+            min-height: 350px;
+            margin: 100px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* border: 2px solid white; */
+        }
+        .pic2-con1{
+            width: 700px;
+            height: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content:flex-start;
+            /* text-align: center; */
+            /* border: 2px solid white; */
+            animation: up4 1s linear;
+        }
+        .pic2-con1 h1{
+            color: white;
+            font-size: 60px;
+            margin: -20px 0px;
+            font-weight: lighter;
+        }
+        @keyframes up4 {
+            from{
+                margin-top:40px;
+            }
+            to{
+                margin-top: -20px;
+            }
+            
+        }
+        .pic2-con1 p{
+            color: white;
+            font-weight: bold;
+        }
+        #pic-p{
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        .pic2-div{
+            width: 80px;
+            margin-top: 40px;
+            border-top: 1px solid white;
+        }
+        .pic2-con1 span{
+            width: 100px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            /* border: 2px solid white; */
+            background-color: rgb(27, 26, 26);
+            color: white;   
+        }
+        .pic2-con1 span:hover{
+            background-color: white;
+            color: black;
+        }
+        .pic2-con2{
+            width: 200px;
+            height: 290px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            /* border: 2px solid white;             */
+        }
+        #hs li{
+            display: inline-flex;
+        }
+        #hello{
+            color: white;
+        }
+        #h1{
+            width:30px;
+            height: 0px;
+            margin-left: 20px;
+            border:1px solid red ;
+        }
+        #h2{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h3{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h4{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+        #h5{
+            width:50px;
+            height: 0px;
+            margin:10px 40px;
+            border:1px solid white ;
+        }
+      
+        .pic3{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-attachment: fixed;
+            /* opacity: 0; */
+            visibility: hidden;
+            background-image: url(./images/slide_7-3-copyright1\ \(1\).jpg);
+            background-position: center;
+            background-size: cover;
+            animation: fade3 15s infinite linear;
+        }
+        @keyframes fade3 {
+            0%{visibility: hidden;}
+            33%{visibility: hidden;}
+            66%{visibility: visible;}
+            100%{visibility: hidden;}
+        }
+        .pic3-content{
+            width: 70%;
+            min-height: 350px;
+            margin: 150px auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            /* border: 2px solid white; */
+        }
+        .pic3-con1{
+            width: 600px;
+            height: 350px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content:flex-start;
+            /* text-align: center; */
+            /* border: 2px solid white; */
+            animation: left 1s linear;
+        }
+        @keyframes left {
+            from{
+                margin-left: 300px;
+            }
+            to{
+                margin-left: 0px;
+            }
+            
+        }
+        .pic3-con1 h1{
+            color: white;
+            font-size: 60px;
+            margin: 0px 0px;
+            font-weight: lighter;
+        }
+        .pic3-con1 p{
+            color: white;
+            font-weight: bold;
+        }
+        .pic3-con1 span{
+            width: 100px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            /* border: 2px solid white; */
+            background-color: rgb(27, 26, 26);
+            color: white;   
+        }
+        .pic3-con1 span:hover{
+            background-color: white;
+            color: black;
+        }
+        .pic3-con2{
+            width: 200px;
+            height: 290px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            /* border: 2px solid white;             */
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="header-wrapper">
+        <div class="pic1">
+            <div class="pic1-content">
+                <div class="con1">
+                    <p>Hello Everyone</p>
+                    <h1>I'm german game designer based in Vinenna.</h1>
+                </div>
+                <div class="con2">
+                    <ul id="hs">
+                        <li id="hello">Hello</li>
+                        <li id="h1"></li>
+                        <li id="h2"></li>
+                        <li id="h3"></li>
+                        <li id="h4"></li>
+                        <li id="h5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pic2">
+            <div class="pic2-content">
+                <div class="pic2-con1">
+                    <p>Game Concept</p>
+                    <h1>Animation <br> effect for projects</h1>
+                    <div class="pic2-div"></div>
+                    <p id="pic-p">I will create the most unique effect toamphasize every feature of your project and
+                        make your website stand out among competitors.
+                    </p>
+                    <span>View More</span>
+                </div>
+                <div class="pic2-con2">
+                    <ul id="hs">
+                        <li id="hello">Space</li>
+                        <li id="h1"></li>
+                        <li id="h2"></li>
+                        <li id="h3"></li>
+                        <li id="h4"></li>
+                        <li id="h5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="pic3">
+            <div class="pic3-content">
+                <div class="pic3-con1">
+                    <p>Game Concept</p>
+                    <h1>Impressive <br> futuristic spaceship</h1>
+                    <span>View More</span>
+                </div>
+                <div class="pic3-con2">
+                    <ul id="hs">
+                        <li id="hello">Space</li>
+                        <li id="h1"></li>
+                        <li id="h2"></li>
+                        <li id="h3"></li>
+                        <li id="h4"></li>
+                        <li id="h5"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="nav-item i1"></div>
+            <div class="nav-item i2">
+                <i class="fas fa-stream"></i>
+            </div>
+        </div>
+        <div class="main-header">
+            <div class="main-content con-1"><p>View All Projects</p></div>
+            <div class="main-content con-2">
+                <ul id="animation1">
+                    <li id="anim"></li>
+                    <li id="p2">Scroll Baby, Scroll</li>
+                </ul>
+            </div>
+            <div class="main-content con-3">
+                <ul id="ul9">
+                    <li><i class="fas fa-long-arrow-alt-up"></i></li>
+                    <li><i class="fas fa-long-arrow-alt-down"></i></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
